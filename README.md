@@ -8,6 +8,31 @@ Blue Canary supports Python 3 and can be installed via pip:
 $ pip install blue-canary
 ```
 
+## Usage
+
+Blue Canary currently supports two commands:   
+update_tags   
+update_alarms   
+
+__update_tags__:   
+update_tags will tag each resource with the given key/value pair.
+
+__update_alarms__:
+update_alarms will create and/or update alarms for any resource in your AWS account that matches your specified key/value tags.   
+
+**Example usage**:
+```
+$ bluecanary update_tags -p /path/to/config/ -v
+```
+
+### Parameters
+
+Both update_tags and update_alarms accept the following parameters and options:
+
+--path (-p): Path to yaml file or directory.  If a directory, Blue Canary will recursively load any yaml files in the directory.  May be provided multiple times to specify multiple files or directories.
+
+--verbose (-v): Enable verbose output.  Add the flag multiple times for additional output (.eg -vv, -vvv)
+
 ## Configuration
 
 To use Blue Canary you must set up authentication credentials.  AWS credentials are configured in the [IAM Console](https://console.aws.amazon.com/iam/home).  Once you have a set of valid AWS credentials.  You can set them up in several ways:
