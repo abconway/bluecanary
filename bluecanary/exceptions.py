@@ -1,0 +1,2 @@
+class NamespaceError(Exception):
+    pass
