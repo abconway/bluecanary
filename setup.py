@@ -9,9 +9,6 @@ setup(
     install_requires=[
         'Boto3',
         'Click',
-        'coverage',
-        'flake8',
-        'nose',
         'pluginbase',
         'PyYAML',
     ],
