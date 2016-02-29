@@ -62,5 +62,6 @@ def parse_data(data):
     for tag_group in data.get('TagGroups', []):
         TagsManager.add_tag_group(**tag_group)
 
-    for directory_path in data.get('Configuration').get('Plugins', []):
-        ConfigurationManager.add_plugins_directory(directory_path)
+    if data.get('Configuration'):
+        for directory_path in data.get('Configuration').get('Plugins', []):
+            ConfigurationManager.add_plugins_directory(directory_path)
