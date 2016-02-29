@@ -25,11 +25,11 @@ bluecanary update_tags -p /path/to/config/ -v
 
 ### Parameters
 
-Both update_tags and update_alarms accept the following parameters and options:
+Both `update_tags` and `update_alarms` accept the following parameters and options:
 
---path (-p): Path to yaml file or directory.  If a directory, Blue Canary will recursively load any yaml files in the directory.  May be provided multiple times to specify multiple files or directories.
+`--path (-p)`: Path to yaml file or directory.  If a directory, Blue Canary will recursively load any yaml files in the directory.  May be provided multiple times to specify multiple files or directories.
 
---verbose (-v): Enable verbose output.  Add the flag multiple times for additional output (.eg -vv, -vvv)
+`--verbose (-v)`: Enable verbose output.  Add the flag multiple times for additional output (.eg -vv, -vvv)
 
 ## Configuration
 
@@ -162,3 +162,9 @@ or
 ```
 $ make test-with-coverage
 ```
+
+## Licence [![license](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](./LICENSE)
+
+Copyright (c) 2016 Voxy, <http://github.com/voxy>
+
+> Read full license here: [LICENSE](./LICENSE)
