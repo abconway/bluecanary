@@ -4,7 +4,7 @@
 
 ## Installation
 
-Blue Canary supports Python 3 and can be installed via pip:
+Blue Canary supports Python 2 and 3 and can be installed via pip:
 
 ```
 pip install bluecanary
