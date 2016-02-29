@@ -29,7 +29,7 @@ def update_tags(path, verbose):
     update_elb_tags(verbose=verbose)
 
 
-@cli.command()
+@cli.command(help="Create and/or update alarms for a resource in AWS")
 @click.option('--path', '-p', type=click.Path(), multiple=True,
               help='File or Directory path to load yaml files from')
 @click.option('--verbose', '-v', count=True,
