@@ -1,5 +1,7 @@
 # Blue Canary - An AWS CloudWatch Metric Alarm Automation Suite
 
+[![unix_build](https://travis-ci.org/voxy/blue-canary.svg?branch=master)](https://travis-ci.org/voxy/blue-canary) [![windows_build](https://img.shields.io/appveyor/ci/voxy/blue-canary.svg?label=windows%20build)](https://ci.appveyor.com/project/voxy/blue-canary)
+
 ## Installation
 
 Blue Canary supports Python 3 and can be installed via pip:
