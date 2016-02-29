@@ -5,13 +5,16 @@ from ..utilities.load_yaml import load_path
 from .update_alarms import update_ec2_alarms, update_elb_alarms
 from .update_tags import update_ec2_tags, update_elb_tags
 
+__version__ = "0.0.2"
+
 
 @click.group()
+@click.version_option(version=__version__)
 def cli():
     pass
 
 
-@cli.command()
+@cli.command(help="Tag each resource with the given key/value pair")
 @click.option('--path', '-p', type=click.Path(), multiple=True,
               help='File or Directory path to load yaml files from')
 @click.option('--verbose', '-v', count=True,
