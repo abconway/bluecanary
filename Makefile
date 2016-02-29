@@ -6,7 +6,7 @@ install:
 	python setup.py install
 
 develop:
-	pip install -e .
+	pip install -r requirements-dev.txt
 
 lint:
 	flake8 $(PACKAGE)

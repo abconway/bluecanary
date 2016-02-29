@@ -1,0 +1,4 @@
+-e .
+coverage==4.0.3
+flake8==2.5.4
+nose==1.3.7
