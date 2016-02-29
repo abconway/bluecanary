@@ -17,6 +17,8 @@ test:
 test-with-coverage:
 	nosetests --with-coverage --cover-package=$(PACKAGE)
 
+coverage: test-with-coverage
+
 version-patch:
 	bumpversion patch setup.py bluecanary/scripts/bluecanary.py
 
