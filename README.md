@@ -5,24 +5,22 @@
 Blue Canary supports Python 3 and can be installed via pip:
 
 ```
-$ pip install blue-canary
+pip install bluecanary
 ```
 
 ## Usage
 
-Blue Canary currently supports two commands:   
-update_tags   
-update_alarms   
+Blue Canary currently supports two commands: `update_tags` and `update_alarms`
 
-__update_tags__:   
+__update_tags__:
 update_tags will tag each resource with the given key/value pair.
 
 __update_alarms__:
-update_alarms will create and/or update alarms for any resource in your AWS account that matches your specified key/value tags.   
+update_alarms will create and/or update alarms for any resource in your AWS account that matches your specified key/value tags.
 
 **Example usage**:
 ```
-$ bluecanary update_tags -p /path/to/config/ -v
+bluecanary update_tags -p /path/to/config/ -v
 ```
 
 ### Parameters
@@ -42,6 +40,7 @@ To use Blue Canary you must set up authentication credentials.  AWS credentials 
 You can set up credentials in ~/.aws/credentials and regions in ~/.aws/config
 
 ~/.aws/credentials
+
 ```
 [default]
 aws_access_key_id = <<YOUR_ACCESS_KEY>>
@@ -49,6 +48,7 @@ aws_secret_access_key = <<YOUR_SECRET_KEY>>
 ```
 
 ~/.aws/config
+
 ```
 [default]
 region=us-east-1
@@ -57,9 +57,9 @@ region=us-east-1
 2.) Environment Variables
 
 ```
-$ export AWS_ACCESS_KEY_ID=<<YOUR_ACCESS_KEY>>
-$ export AWS_SECRET_ACCESS_KEY=<<YOUR_SECRET_KEY>>
-$ export AWS_DEFAULT_REGION=us-east-1
+export AWS_ACCESS_KEY_ID=<<YOUR_ACCESS_KEY>>
+export AWS_SECRET_ACCESS_KEY=<<YOUR_SECRET_KEY>>
+export AWS_DEFAULT_REGION=us-east-1
 ```
 
 3.) Within Blue Canary configuration files.  See the Setup section below.
@@ -68,14 +68,14 @@ $ export AWS_DEFAULT_REGION=us-east-1
 
 Blue Canary is configured via yaml files.  There are 4 sections:
 
-1.) Configuration:   
-Currently used to configured the locations of additional alarm plugins.   
-2.) AWSProfiles:   
-If you do not wish to store AWS credentials in ~/.aws/credentials or environment variables, you can define them here.   
-3.) AlarmGroups:   
-Definitions of suites of alarms to be created/applied to any resources that match the specified tag/value combonation.   
-4.) TagGroups:   
-Lists of resources to be tagged with the given tag/value combonation.   
+1. `Configuration`:
+Currently used to configured the locations of additional alarm plugins.
+2. `AWSProfiles`:
+If you do not wish to store AWS credentials in ~/.aws/credentials or environment variables, you can define them here.
+3. `AlarmGroups`:
+Definitions of suites of alarms to be created/applied to any resources that match the specified tag/value combonation.
+4. `TagGroups`:
+Lists of resources to be tagged with the given tag/value combonation.
 
 /example/blue-canary-configuration.yaml
 ```
@@ -157,7 +157,7 @@ $ make develop
 $ make test
 ```
 
-or 
+or
 
 ```
 $ make test-with-coverage
