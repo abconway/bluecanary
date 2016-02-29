@@ -1,6 +1,7 @@
 # Blue Canary - An AWS CloudWatch Metric Alarm Automation Suite
 
-[![unix_build](https://travis-ci.org/voxy/blue-canary.svg?branch=master)](https://travis-ci.org/voxy/blue-canary) [![windows_build](https://img.shields.io/appveyor/ci/voxy/blue-canary.svg?label=windows%20build)](https://ci.appveyor.com/project/voxy/blue-canary)
+[![unix_build](https://img.shields.io/travis/voxy/bluecanary.svg?label=unix%20build)](https://travis-ci.org/voxy/bluecanary)
+[![windows_build](https://img.shields.io/appveyor/ci/marcwebbie/bluecanary.svg?label=windows%20build)](https://ci.appveyor.com/project/marcwebbie/bluecanary)
 
 ## Installation
 
