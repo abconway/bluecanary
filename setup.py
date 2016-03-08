@@ -1,4 +1,6 @@
 from setuptools import setup, find_packages
+import os
+import sys
 
 __version__ = '0.0.4'
 __requirements__ = [
@@ -7,6 +9,12 @@ __requirements__ = [
     "pluginbase==0.3",
     "PyYAML==3.11",
 ]
+
+
+if sys.argv[-1] == 'publish':
+    os.system('python setup.py sdist upload')
+    os.system('python setup.py bdist_wheel upload')
+    sys.exit()
 
 
 setup(

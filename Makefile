@@ -38,3 +38,9 @@ dist:
 	@echo "Build files [dist]:"
 	@echo "--------------------------"
 	@ls -l ./dist/
+
+register:
+	python setup.py register
+
+publish:
+	python setup.py publish
