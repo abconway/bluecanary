@@ -27,3 +27,14 @@ version-minor:
 
 version-major:
 	bumpversion major setup.py bluecanary/scripts/bluecanary.py
+
+dist:
+	pip install wheel
+	python setup.py -q sdist
+	python setup.py -q bdist_egg
+	python setup.py -q bdist_wheel
+
+	@echo
+	@echo "Build files [dist]:"
+	@echo "--------------------------"
+	@ls -l ./dist/
