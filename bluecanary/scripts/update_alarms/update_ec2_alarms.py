@@ -7,11 +7,9 @@ from bluecanary.tags import get_all_ec2_tags
 from bluecanary.utilities import preserve_credentials_state
 
 
-plugin_alarms = load_plugins()
-
-
 @preserve_credentials_state
 def update_ec2_alarms(verbose=0):
+    plugin_alarms = load_plugins()
     alarm_keys = AlarmsManager.get_alarm_keys()
 
     for alarm_key in alarm_keys:
