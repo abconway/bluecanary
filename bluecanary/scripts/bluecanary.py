@@ -5,7 +5,7 @@ from ..utilities.load_yaml import load_path
 from .update_alarms import update_ec2_alarms, update_elb_alarms
 from .update_tags import update_ec2_tags, update_elb_tags
 
-__version__ = "0.0.4"
+__version__ = "0.0.5"
 
 
 @click.group()

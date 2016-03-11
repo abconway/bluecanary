@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import os
 import sys
 
-__version__ = '0.0.4'
+__version__ = '0.0.5'
 __requirements__ = [
     "boto3==1.2.3",
     "click==6.2",
