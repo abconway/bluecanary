@@ -10,7 +10,13 @@ def set_cloudwatch_alarm(identifier, **kwargs):
         kwargs['Dimensions'] = _get_dimensions(identifier, **kwargs)
 
     if not kwargs.get('AlarmName'):
-        kwargs['AlarmName'] = '{}_{}'.format(identifier, kwargs.get('MetricName'))
+        kwargs['AlarmName'] = '{}_{}'.format(identifier,
+                                             kwargs.get('MetricName'))
+
+    if kwargs.get('AlarmNameModifier'):
+        kwargs['AlarmName'] = '{}_{}'.format(kwargs.get('AlarmName'),
+                                             kwargs.get('AlarmNameModifier'))
+        del(kwargs['AlarmNameModifier'])
 
     cloudwatch_client = boto3.client('cloudwatch')
 
