@@ -43,4 +43,4 @@ register:
 	python setup.py register
 
 publish:
-	python setup.py publish
+	twine upload dist/*
