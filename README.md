@@ -3,6 +3,8 @@
 [![unix_build](https://img.shields.io/travis/voxy/bluecanary.svg?label=unix%20build)](https://travis-ci.org/voxy/bluecanary)
 [![windows_build](https://img.shields.io/appveyor/ci/marcwebbie/bluecanary.svg?label=windows%20build)](https://ci.appveyor.com/project/marcwebbie/bluecanary)
 
+Documentation available here: [http://bluecanary.readthedocs.org/en/latest/README/](http://bluecanary.readthedocs.org/en/latest/README/)
+
 ## Installation
 
 Blue Canary supports Python 2 and 3 and can be installed via pip:
