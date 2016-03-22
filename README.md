@@ -38,7 +38,7 @@ Both `update_tags` and `update_alarms` accept the following parameters and optio
 
 ## Configuration
 
-To use Blue Canary you must set up authentication credentials.  AWS credentials are configured in the [IAM Console](https://console.aws.amazon.com/iam/home).  Once you have a set of valid AWS credentials.  You can set them up in several ways:
+To use Blue Canary you must set up authentication credentials.  AWS credentials are configured in the [IAM Console](https://console.aws.amazon.com/iam/home).  Once you have a set of valid AWS credentials, you can set them up in several ways:
 
 1.) Credentials Files
 
@@ -67,20 +67,20 @@ export AWS_SECRET_ACCESS_KEY=<<YOUR_SECRET_KEY>>
 export AWS_DEFAULT_REGION=us-east-1
 ```
 
-3.) Within Blue Canary configuration files.  See the Setup section below.
+3.) Within Blue Canary configuration files. See the Setup section below.
 
 ## Setup
 
-Blue Canary is configured via yaml files.  There are 4 sections:
+Blue Canary is configured via yaml files. There are 4 sections:
 
 1. `Configuration`:
 Currently used to configured the locations of additional alarm plugins.
 2. `AWSProfiles`:
 If you do not wish to store AWS credentials in ~/.aws/credentials or environment variables, you can define them here.
 3. `AlarmGroups`:
-Definitions of suites of alarms to be created/applied to any resources that match the specified tag/value combonation.
+Definitions of suites of alarms to be created/applied to any resources that match the specified tag/value combination.
 4. `TagGroups`:
-Lists of resources to be tagged with the given tag/value combonation.
+Lists of resources to be tagged with the given tag/value combination.
 
 /example/blue-canary-configuration.yaml
 ```

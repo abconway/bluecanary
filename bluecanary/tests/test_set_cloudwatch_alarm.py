@@ -20,7 +20,7 @@ class TestSetCloudwatchAlarm(unittest.TestCase):
             'Namespace': 'AWS/EC2',
         }
 
-    def test_is_fails_if_an_unknown_namespace_is_provided(self):
+    def test_it_fails_if_an_unknown_namespace_is_provided(self):
 
         alarm_kwargs = self.alarm_kwargs.copy()
         alarm_kwargs['Namespace'] = 'unknown/namespace'
