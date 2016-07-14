@@ -1,0 +1,1 @@
+include bluecanary/builtin_plugins/*.py
