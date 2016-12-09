@@ -2,6 +2,8 @@
 
 [![unix_build](https://img.shields.io/travis/voxy/bluecanary.svg?label=unix%20build)](https://travis-ci.org/voxy/bluecanary)
 [![windows_build](https://img.shields.io/appveyor/ci/marcwebbie/bluecanary.svg?label=windows%20build)](https://ci.appveyor.com/project/marcwebbie/bluecanary)
+[![Code Health](https://landscape.io/github/voxy/bluecanary/master/landscape.svg?style=plastic)](https://landscape.io/github/voxy/bluecanary/master)
+
 
 Documentation available here: [http://bluecanary.readthedocs.org/en/latest/README/](http://bluecanary.readthedocs.org/en/latest/README/)
 
