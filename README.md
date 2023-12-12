@@ -1,4 +1,4 @@
-# Blue Canary - An AWS CloudWatch Metric Alarm Automation Suite
+# (UNMAINTAINED) Blue Canary - An AWS CloudWatch Metric Alarm Automation Suite
 
 [![unix_build](https://img.shields.io/travis/voxy/bluecanary.svg?label=unix%20build)](https://travis-ci.org/voxy/bluecanary)
 [![windows_build](https://img.shields.io/appveyor/ci/marcwebbie/bluecanary.svg?label=windows%20build)](https://ci.appveyor.com/project/marcwebbie/bluecanary)
